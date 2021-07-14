@@ -20,12 +20,15 @@ nav ul {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    
+}
+nav li a {
     text-transform: uppercase;
     font-weight: semi-bold;
     font-size: 12px;
     color: #FFFFFF;
 }
-nav ul :nth-child(1) {
+.home {
     color: #5863F8;
 }
 .logo {
