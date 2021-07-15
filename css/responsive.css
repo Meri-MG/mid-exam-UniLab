@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 @media (max-width: 1024px){
     .burger-icon {
         display: block;
@@ -17,7 +24,8 @@
     .icons-box {
         max-width: 600px;
         width: 100%;
-        justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
         margin: 0 auto;
     }
     .section2 {
@@ -31,14 +39,23 @@
 }
 @media (max-width: 980px){
     .twin-pics {
-        justify-content: center;
-        align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
 }
 @media (max-width: 768px){
     .section1 {
-        flex-direction: column;
-        align-items:center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align:center;
+            -ms-flex-align:center;
+                align-items:center;
     }
     .text-block{
         margin-bottom: 40px;
@@ -54,7 +71,10 @@
 }
 @media (max-width: 480px){
     nav{
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 .burger-icon {
     font-size: 20px;
@@ -69,7 +89,6 @@
     font-size: 20px;
 }
 h1 {
-    font-size: 30;
     margin-left: 60px;
 }
 }
